@@ -1,0 +1,196 @@
+@media only screen and (max-width: 768px) {
+
+    .container {
+        margin-bottom: 0 !important;
+    }
+
+    /* HEADER - FOOTER */
+    header, footer {
+        height: auto;
+    }
+
+    header {
+        display: none;
+        padding: 0;
+    }
+
+    footer {
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    header nav, footer nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav a, footer nav a {
+        font-size: 18px;
+    }
+    
+
+    .slider {
+        height: 300px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .slider-img {
+        height: 300px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .slider-txt {
+        font-size: 40px;
+        bottom: 60px;
+        left: 0;
+        padding: 0 10px;
+    }
+
+    /* CARD */
+
+    .card-section {
+        width: 100%;
+        height: auto !important;
+        box-sizing: content-box;
+        padding: 10px 0 !important;
+        margin: 0 !important;
+    }
+
+    .card-container {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+
+    .card {
+        width: 100%;
+        margin: 20px 0;
+        height: auto;
+    }
+
+    .card-img {
+        height: 150px;
+        width: 100%;
+    }
+
+    .card-img img{
+        height: auto;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-desc {
+        font-size: 14px;
+    }
+
+    .president-section {
+        height: auto !important;
+    }
+
+    .president-container {
+        flex-direction: column;
+        height: auto !important;
+        padding: 0 0 10px 0;
+        width: 100%;
+    }
+
+    .president-img {
+        overflow: hidden;
+        height: 200px;
+        width: 100%;
+        margin: 0 !important;
+        border-radius: 0;
+    }
+
+    .president-name {
+        font-size: 30px;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .president-title {
+        font-size: 30px;
+    }
+
+    .president-desc {
+        width: 100%;
+        height: auto;
+        margin: 14px;
+    }
+
+    .president-desc p {
+        font-size: 10px;
+    }
+
+    /* EVENT PAGE */
+    .search-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container span:first-child {
+        font-size: 20px;
+    }
+
+    .search-container span input {
+        width: 100%;
+    }
+
+    .event-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .event-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .event-category {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .event-title {
+        font-size: 18px;
+    }
+
+    .event-img {
+        height: 200px;
+    }
+
+    /* PROGRAMME PAGE */
+    .programme-container {
+        width: 90%;
+    }
+
+    .programme-container h1, .arg-nbr {
+        font-size: 32px;
+    }
+
+    .programme-category {
+        font-size: 18px;
+    }
+
+    .programme-resum {
+        font-size: 20px;
+    }
+
+    .programme-desc p {
+        font-size: 16px;
+    }
+
+    .programme-arg {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+</head>
+<body>
+
+    <section class="container">
+        <div class="slider">
+            <div class="slider-img">
+                <img src="1129x500_npa.jpg" alt="">
+            </div>
+            <div class="slider-txt">
+                <span>l'amérique debout,</span><br>
+                <span style="color: var(--r)">l'avenir avec nous!</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+    * {
+        font-family: 'lexend', sans-serif;
+        box-sizing: content-box;
+    }
+
+    :root{
+        --k: #222;
+        --w: #E8E8E6;
+        --b: #182A3E;
+        --r: #CE223B;
+        --y: #CEC022;
+    }
+
+    .slider {
+        height: 500px;
+        width: 1129px;
+        margin: 60px auto;
+        position: relative;
+        color: var(--b);
+    }
+
+    .slider-img {
+        height: 500px;
+        width: 1129px;
+        border-radius: 20px;
+        object-fit: cover;
+        overflow: hidden;
+        filter: contrast(55%);
+    }
+
+    .slider-txt {
+        position: absolute;
+        z-index: 10;
+        letter-spacing: -3.2px;
+        font-size: 64px;
+        text-transform: uppercase;
+        font-weight: bold;
+        bottom: 95px;
+        left: -90px;
+    }
+</style>

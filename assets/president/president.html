@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>president</title>
+</head>
+<body>
+    <section style="background-color: var(--r); height: 500px">
+        <div class="president-container">
+            <div class="president-img">
+                <img src="650x500_npa.jpg" alt="650x500">
+                <div class="president-name">
+                    <span>Alexander</span><br>
+                    <span style="color: var(--r);">Moore</span>
+                </div>
+            </div>
+            <div class="president-desc">
+                <span class="president-title">notre président</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae scelerisque ipsum. Nulla ut euismod arcu. Vestibulum eu quam nisi. Curabitur scelerisque sapien tellus, eget condimentum est dictum eu. Phasellus nisi dui, cursus a volutpat in, posuere et erat. Vivamus placerat molestie ligula sit amet euismod. Cras velit nibh, maximus ac tortor ac, sollicitudin condimentum urna. Suspendisse tempor, tortor at egestas pulvinar, enim arcu laoreet diam, in rhoncus odio eros consequat est. Curabitur imperdiet ex non sem ultrices aliquet. </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+    * {
+        font-family: 'lexend', sans-serif;
+        box-sizing: content-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    :root{
+        --k: #222;
+        --w: #E8E8E6;
+        --b: #182A3E;
+        --r: #CE223B;
+        --y: #CEC022;
+    }
+
+    .president-container {
+        display: flex;
+        width: max-content;
+        margin: 0 auto;
+        text-transform: uppercase;
+        color: var(--w);
+        padding: 60px 0 0 0;
+    }
+
+    .president-title {
+        font-size: 64px;
+        font-weight: bold;
+    }
+
+    .president-desc {
+        width: 640px;
+    }
+
+    .president-desc p {
+        font-size: 20px;
+    }
+
+    .president-img, .president-desc {
+        margin: 0 30px;
+    }
+
+    .president-img {
+        height: 500px;
+        width: 650px;
+        background-color: #222;
+        border-radius: 20px;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+        transition: all ease-in-out 0.4s;
+    }
+
+    .president-img img {
+        filter: contrast(50%);
+    }
+
+    .president-img:hover {
+        box-shadow: 0 0 20px var(--k);
+    }
+
+    .president-name {
+        color: var(--b);
+        position: absolute;
+        font-size: 48px;
+        font-weight: bold;
+        bottom: 60px;
+        left: 40px;
+    }
+
+</style>

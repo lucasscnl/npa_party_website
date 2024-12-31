@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+</head>
+<body>
+    <section class="programme-container">
+        <h1>Notre programme en 6 points</h1>
+
+        <div class="programme-category">
+            <h1>Vision du parti</h1>
+            <div class="programme-desc">
+                <p class="programme-resum">sécurité, croissance, économie et souveraineté nationale</p>
+                <div class="programme-arg">
+                    <p>Notre parti a pour but de régler les soucis qui touchent l’état directement avant de s’impliquer dans les affaires qui lui sont exterieur</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="programme-category">
+            <h1>économie</h1>
+            <div class="programme-desc">
+                <p class="programme-resum">réforme et soutient</p>
+                <div class="programme-arg">
+                    <span class="arg-nbr">1</span>
+                    <p>Nous voulons réformer le système d’impositions, pour produire un système fiscal qui soit adapté à tous tout en favorisant une croissance économique.</p>
+                </div>
+                <div class="programme-arg">
+                    <span class="arg-nbr">2</span>
+                    <p>Nous souhaitons également marquer un soutient fort aux entreprises qui sont la base de notre économie et qui, souvent, sont délaissée par les gouvernement</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="programme-category">
+            <h1>santé</h1>
+            <div class="programme-desc">
+                <p class="programme-resum">équitable, défense, augmentation</p>
+                <div class="programme-arg">
+                    <span class="arg-nbr">1</span>
+                    <p>Nous souhaitons que notre système de santé sois plus accessible, aujourd’hui des soins qui en europe son remboursé, coutent 4 fois plus chers aux familles. Nous proposons le développement d’assurance privées qui developpera en plus notre économie</p>
+                </div>
+                <div class="programme-arg">
+                    <span class="arg-nbr">2</span>
+                    <p>Nous sommes convaincu que notre pays peut devenir plus sécuritaire également par le développement médical. Nous voulons augmenter ce budget qui nous permettras de mettre en sécurité bon nombre de citoyens mais aussi de promouvoir notre état.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="programme-category">
+            <h1>environement</h1>
+            <div class="programme-desc">
+                <p class="programme-resum">durable, mixte, modernisation</p>
+                <div class="programme-arg">
+                    <span class="arg-nbr">1</span>
+                    <p>Nous comptons continuer le développement des énergies durables, qui sont sans doute l’avenir de notre énergie.</p>
+                </div>
+                <div class="programme-arg">
+                    <span class="arg-nbr">2</span>
+                    <p>Toutes fois, aujourd’hui, cette énergie n’est pas prête à prendre la charge d’un état entier. C’est pourquoi nous pronons une continuité mixte entre la modernisation du nucléaire et le développement des énergies durables.</p>
+                </div>
+                <div class="programme-arg">
+                    <span class="arg-nbr">3</span>
+                    <p>Nous souhaitons modernisé nos infrastructures. Cela viendra compléter notre actes environnementale tout en optimisant nos ressources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+    * {
+        font-family: 'lexend', sans-serif;
+        box-sizing: content-box;
+    }
+
+    :root{
+        --k: #222;
+        --w: #E8E8E6;
+        --b: #182A3E;
+        --r: #CE223B;
+        --y: #CEC022;
+        --gradienta: linear-gradient(to right, var(--b) 0%, var(--r) 40%);
+        --gradientb: linear-gradient(to right, var(--b) 0%, var(--r) 100%);
+    }
+
+    .programme-container {
+        width: 60%;
+        margin: 60px auto;
+    }
+
+    h1, .arg-nbr {
+        margin: 5px 0;
+        text-transform: uppercase;
+        background: #182A3E;
+        background: var(--gradienta);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .arg-nbr {
+        background: var(--gradientb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-right: 5px;
+    }
+
+    .programme-category {
+        margin: 30px 0;
+        color: var(--b);
+    }
+
+    .programme-resum {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    .programme-desc p {
+        margin: 5px 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .programme-arg {
+        display: flex;
+        align-items: center;
+    }
+
+</style>

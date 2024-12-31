@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+</head>
+<body>
+    <section style="background-color: var(--b); height: 300px">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="200x300_npa.jpg" alt="">
+                    <span class="card-category event">meeting</span>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Lorem Ipsum</span>
+                    <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae scelerisque ipsum. Nulla ut euismod arcu. Vestibulum eu quam nisi.</p>
+                    <span class="card-author">26/12 - By A. moore</span>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-img">
+                    <img src="200x300_npa.jpg" alt="">
+                    <span class="card-category release">Communiqué</span>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Lorem Ipsum</span>
+                    <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae scelerisque ipsum. Nulla ut euismod arcu. Vestibulum eu quam nisi.</p>
+                    <span class="card-author">26/12 - By A. moore</span>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-img">
+                    <img src="200x300_npa.jpg" alt="">
+                    <span class="card-category laws">lois</span>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Lorem Ipsum</span>
+                    <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae scelerisque ipsum. Nulla ut euismod arcu. Vestibulum eu quam nisi.</p>
+                    <span class="card-author">26/12 - By A. moore</span>
+                </div>
+            </div>
+    </section>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+    * {
+        font-family: 'lexend', sans-serif;
+    }
+
+    :root{
+        --k: #222;
+        --w: #E8E8E6;
+        --b: #182A3E;
+        --r: #CE223B;
+        --y: #CEC022;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-container {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin: 30px auto;
+        height: 400px;
+        width: 300px;
+        background-color: var(--w);
+        border-radius: 20px;
+        text-transform: uppercase;
+        color: var(--r);
+        box-shadow: 0 0 20px 0 var(--k);
+    }
+
+    .card-img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+        background-color: var(--w);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-category {
+        font-size: 11px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: var(--r);
+        color: var(--w);
+        padding: 8px;
+        border-radius: 10px;
+        min-width: 100px;
+        text-align: center;
+    }
+
+    .laws {
+        background-color: var(--r) !important;
+    }
+
+    .release {
+        background-color: var(--y) !important;
+    }
+
+    .event {
+        background-color: var(--b) !important;
+    }
+
+    .card-content {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .card-desc {
+        font-size: 15px;
+    }
+
+    .card-author {
+        font-size: 12px;
+        font-weight: light;
+    }
+
+</style>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+</head>
+<body>
+
+    <footer>
+        <nav>
+            <a href="">le <strong>parti</strong></a>
+            <a href="">notre <strong>programme</strong></a>
+            <a href=""><img src="logo.png" alt=""></a>
+            <a href="">nos <strong>évènements</strong></a>
+            <a href="">les <strong>élèctions</strong></a>
+        </nav>
+        <span>&copy Lucass - 2024</span>
+    </footer>
+
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+    * {
+        font-family: 'lexend', sans-serif;
+        box-sizing: content-box;
+    }
+
+    :root{
+        --k: #222;
+        --w: #E8E8E6;
+        --b: #182A3E;
+        --r: #CE223B;
+        --y: #CEC022;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    footer {
+        color: var(--w);
+        text-transform: uppercase;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        background: linear-gradient(90deg, var(--b) 0%, var(--r) 100%);
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        margin: 30px;
+    }
+
+    footer nav a {
+        color: var(--w) !important;
+        font-size: 24px;
+        font-weight: 500;
+        transition: all ease-in-out 0.2s;
+    }
+
+    strong {
+        font-weight: bolder;
+    }
+</style>

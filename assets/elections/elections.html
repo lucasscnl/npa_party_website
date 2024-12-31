@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d76525ec9b.js" crossorigin="anonymous"></script>
+    <title>event_card</title>
+</head>
+<body>
+
+    <section class="result-section">
+        <h1>Résultat des éléctions</h1>
+        <div class="result-winner">
+            <article class="result-container">
+                <div class="result-candidat">
+                    
+                    <div class="candidat-img">
+                        <img src="" alt="name">
+                    </div>
+
+                    <div class="candidat-stats">
+                        <p>alexander moore</p>
+                        <div class="candidat-max">
+                            <div class="candidat-score">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+
+        <article class="result-container">
+            <div class="result-candidat">
+                
+                <div class="candidat-img">
+                    <img src="" alt="name">
+                </div>
+
+                <div class="candidat-stats">
+                    <p>alexander moore</p>
+                    <div class="candidat-max">
+                        <div class="candidat-score">
+                            <span>45%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+        <article class="result-container">
+            <div class="result-candidat">
+                
+                <div class="candidat-img">
+                    <img src="" alt="name">
+                </div>
+
+                <div class="candidat-stats">
+                    <p>alexander moore</p>
+                    <div class="candidat-max">
+                        <div class="candidat-score">
+                            <span>45%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </section>
+
+</body>
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+    * {
+        font-family: 'lexend', sans-serif;
+        box-sizing: content-box;
+    }
+
+    body {
+        margin:0;
+        padding: 0;
+    }
+
+    :root{
+        --k: #222;
+        --w: #E8E8E6;
+        --b: #182A3E;
+        --r: #CE223B;
+        --y: #CEC022;
+        --gradienta: linear-gradient(to right, var(--b) 0%, var(--r) 40%);
+        --gradientb: linear-gradient(to right, var(--b) 0%, var(--r) 100%);
+    }
+
+    .result-winner {
+        background: var(--gradientb);
+        padding: 5px;
+    }
+
+    .result-section h1 {
+        margin: 5px 0;
+        text-transform: uppercase;
+        background: #182A3E;
+        background: var(--gradienta);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .result-candidat {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        margin: 15px auto;
+    }
+
+    .candidat-img {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 20px;
+        margin: 0 15px;
+        background-color: var(--b);
+    }
+
+    .candidat-stats p {
+        color: var(--r);
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin: 0 0 10px 0;
+    }
+
+    .candidat-stats .candidat-max {
+        width: 1010px;
+        height: 110px;
+        background-color: var(--w);
+        border-radius: 20px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .candidat-stats .candidat-score {
+        max-width: 1000px;
+        height: 100px;
+        background: var(--gradientb);
+        border-radius: 15px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .candidat-stats .candidat-score span {
+        color: var(--w);
+        font-size: 64px;
+        font-weight: bold;
+    }
+
+
+
+</style>

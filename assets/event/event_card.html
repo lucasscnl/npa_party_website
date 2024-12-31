@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d76525ec9b.js" crossorigin="anonymous"></script>
+    <title>event_card</title>
+</head>
+<body>
+<section class="search-container">
+    <span>A venir</span>
+    <span class="searchbar"><input type="text" name="event-search" id="event-search" placeholder="RECHERCHER ..."></span>
+</section>
+<section class="event-container">
+    <div class="event-card">
+        <span class="event-category">meeting</span>
+        <h1 class="event-title">Lorem ipsum dolor sit amet</h1>
+        <div class="event-img">
+            <img src="570x250_npa.jpg" alt="">
+        </div>
+        <div class="event-info" >
+            <p><i class="fa-solid fa-calendar-days"></i> jeudi 9 janvier 2024 à 18:30</p>
+            <p><i class="fa-solid fa-location-dot"></i> amphitéatre de vinewood</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+    * {
+        font-family: 'lexend', sans-serif;
+        box-sizing: content-box;
+    }
+
+    :root{
+        --k: #222;
+        --w: #E8E8E6;
+        --b: #182A3E;
+        --r: #CE223B;
+        --y: #CEC022;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15px;
+    }
+
+    .search-container span:first-child {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .search-container span input {
+        width: 500px;
+        border-radius: 20px;
+        border: 3px solid var(--b);
+        padding: 15px;
+        font-size: 15px;
+    }
+
+
+    .event-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .event-card {
+        margin: 15px;
+        height: 450px;
+        width: 600px;
+        background-color: var(--b);
+        border-radius: 20px;
+        padding: 20px 15px;
+        color: var(--w);
+        text-transform: uppercase;
+    }
+
+    .event-card:nth-child(even) {
+        background-color: var(--r);
+    }
+
+    .event-category {
+        min-width: 150px;
+        height: 20px;
+        padding: 3px 50px;
+        text-align: center;
+        background-color: var(--w);
+        border-radius: 20px;
+        color: var(--b);
+        font-size: 11px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .event-title {
+        font-size: 24px;
+    }
+
+    .event-img, .event-info {
+        width: 570px;
+        margin: 0 auto;
+    }
+
+    .event-img {
+        height: 250px;
+        background-color: var(--r);
+        border-radius: 5px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+
+</style>

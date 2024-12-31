@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="">le <strong>parti</strong></a>
+            <a href="">notre <strong>programme</strong></a>
+            <a href=""><img src="logo.png" alt=""></a>
+            <a href="">nos <strong>évènements</strong></a>
+            <a href="">les <strong>élèctions</strong></a>
+        </nav>
+    </header>
+
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+    * {
+        font-family: 'lexend', sans-serif;
+        box-sizing: content-box;
+    }
+
+    :root{
+        --k: #222;
+        --w: #E8E8E6;
+        --b: #182A3E;
+        --r: #CE223B;
+        --y: #CEC022;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        text-transform: uppercase;
+        height: 150px;
+        border-bottom: solid 5px var(--b);
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav a {
+        color: var(--b) !important;
+        font-size: 24px;
+        font-weight: 500;
+        transition: all ease-in-out 0.2s;
+    }
+
+    header nav a img {
+        max-height: 136px;
+        max-width: 136px;
+    }
+
+    strong {
+        font-weight: bolder;
+    }
+
+    header nav a:hover {
+        text-shadow: 0 10px 40px var(--k);
+    }
+</style>
