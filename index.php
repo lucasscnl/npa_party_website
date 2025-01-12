@@ -260,6 +260,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <span>l'amérique debout,</span><br>
                 <span style="color: var(--r)">l'avenir avec nous!</span>
             </div>
+            <button class="burger-button">
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+            </button>
         </div>
     </section>
 
@@ -307,6 +312,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </section>
 
+    <section class="contact-section container">
+        <div class="contact-container">
+            <div class="contact-txt">
+                <span>nous suivre</span>
+            </div>
+            <div class="contact-name">
+                <img src="img/lifeinvader.png" alt="lifeinvader">
+                <span>@NPA</span>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <nav>
             <a href="">le <strong>parti</strong></a>
@@ -320,4 +337,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 <script src="js/gsap_anim.js"></script>
 <script src="js/form.js"></script>
+<script src="js/header.js"></script>
 </html>

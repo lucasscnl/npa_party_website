@@ -47,7 +47,7 @@
     }
 
 
-    /* HEADER - FOOTER*/
+/* HEADER - FOOTER*/
     /* -------------------- */
 
     header, footer {
@@ -104,6 +104,10 @@
         text-shadow: 0 10px 40px var(--k);
     }
 
+    .burger-button {
+        display: none;
+    }
+
 
     /* ---------------------------------------- */
     /* INDEX PAGE */
@@ -129,7 +133,7 @@
         filter: contrast(55%);
     }
 
-    .slider-txt {
+    .slider-txt, .contact-txt {
         position: absolute;
         z-index: 10;
         letter-spacing: -3.2px;
@@ -160,11 +164,6 @@
         color: var(--b);
         box-shadow: 0 0 20px 0 var(--k);   
     }
-
-    .card:hover {
-        transform: scale(1.1);
-    }
-
 
     .card-img {
         border-top-left-radius: 20px;
@@ -277,6 +276,39 @@
         bottom: 60px;
         left: 40px;
     }
+
+    .contact-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-container {
+        border-radius: 20px;
+        width: 60%;
+        height: 300px;
+        background-color: var(--w);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        box-shadow: 0 0 10px var(--k);
+    }
+
+    .contact-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: var(--b);
+        font-weight: bold;
+        width: 50%;
+    }
+
+    .contact-name img {
+        height: 100px;
+    }
+
 
     /* ---------------------------------------- */
     /* EVENT PAGE */
@@ -561,7 +593,7 @@
         transform: translate(-50%, -50%);
     }
 
-    .login-container h1, .login-container label, .form-container h1, .form-container label {
+    .login-container h1, .login-container label, .form-container h1, .form-container label, .contact-txt {
         text-transform: uppercase;
         background: #182A3E;
         background: var(--gradientb);
